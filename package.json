@@ -39,6 +39,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "moment": "^2.24.0"
   }
 }
