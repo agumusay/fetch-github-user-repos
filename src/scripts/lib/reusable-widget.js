@@ -80,11 +80,11 @@ export default class GenerateTemplate {
         document.querySelectorAll("nav button").forEach(async button => {
           button.addEventListener("click", async event => {
             if (event.target.classList.contains("name")) {
-              let gitArray = await this.fetchUrl(`https://api.github.com/users/${userName}/repos`)
+              let gitArray = await this.fetchUrl(`https://api.github.com/users/${this.storeUserName}/repos`)
               let gitList = this.generateList(gitArray)
               document.querySelector("ul").innerHTML = await gitList.join("\n");
             } else {
-              let gitArray = this.fetchUrl(`https://api.github.com/users/${this.storeUserName}/repos?sort=created&direction=desc`)
+              let gitArray = await this.fetchUrl(`https://api.github.com/users/${this.storeUserName}/repos?sort=created&direction=desc`)
               let gitList = this.generateList(gitArray)
               document.querySelector("ul").innerHTML = await gitList.join("\n");
             }
