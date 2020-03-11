@@ -62,18 +62,22 @@ button {
   background: none;
   border: none;
 }
-ul,
-li {
-  width: 95%;
-}
+
 ul {
-  margin-top: 20px;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2), inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 li {
   padding: 15px;
   height: 80px;
+  width: 100%;
   box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2), inset -8px -8px 8px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  margin-right: 0;
   margin: 10px 0px;
   transition: transform 0.2s ease-in-out;
 }
@@ -94,4 +98,38 @@ a {
 .description,
 .date {
   font-size: 1.1rem;
+}
+.left-container {
+  text-align: end;
+}
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+nav button {
+  font-size: 1.05em;
+  width: 70px;
+  color: #616161;
+  box-shadow: 7px 7px 15px #bbcfda, -4px -4px 13px #fff, inset 4px 4px 8px rgba(209, 217, 230, 0.2), inset -8px -8px 8px rgba(255, 255, 255, 0.2);
+  border: 2px solid  rgba(255, 255, 255, 0.74);
+  text-align: center;
+  height: 30px;
+  border-radius: 10px;
+}
+
+nav button:last-child {
+  justify-self: self-end;
+}
+.first-container {
+  padding: 15px;
+  height: 40px;
+  margin-right: 0;
+  width: 100%;
+}
+
+.first-container div {
+  width: 100%;
 }
